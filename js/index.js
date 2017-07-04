@@ -2,10 +2,32 @@
 * @Author: Marte
 * @Date:   2017-05-26 11:03:33
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-07-04 16:55:19
+* @Last Modified time: 2017-07-04 17:24:35
 */
 
 $(document).ready(function(){
+    // 提前加在图片
+    var picSrc = [
+        'images/ex-title-48.jpg',
+        'images/banner_01.jpg',
+        'images/introduce-18.jpg',
+        'images/introduce-48.jpg',
+        'images/introduce-200.jpg',
+        'images/table-18.png',
+        'images/table-48.png',
+        'images/table-200.png',
+        'images/tip.jpg'
+    ];
+    var report = function( src ){
+        var img = new Image();
+        img.src = src;
+        img.onload = function () {
+            return img;
+        }
+    };
+    $.each(picSrc,function (i,v) {
+        report(v);
+    });
     // 卡片旋转
     function Imageflow(thisImage) {
         thisImage.css({
