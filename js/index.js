@@ -16,7 +16,9 @@ $(document).ready(function(){
         'images/table-18.png',
         'images/table-48.png',
         'images/table-200.png',
-        'images/tip.jpg'
+        'images/tip.jpg',
+        'images/tip_18.jpg',
+        'images/tip_48.jpg'
     ];
     var report = function( src ){
         var img = new Image();
@@ -77,6 +79,7 @@ $(document).ready(function(){
         $('#introduceImg').attr('src','images/introduce-200.jpg');
         $('#expensesImgTitle').attr('src','images/ex-title-200.jpg');
         $('#expensesImgTable').attr('src','images/table-200.png');
+        $('#tipImg').attr('src','images/tip.jpg');
     });
     $('[data-pack="48"]').on('click', function () {
         $('[data-pack]').removeClass('act');
@@ -88,6 +91,7 @@ $(document).ready(function(){
         $('#introduceImg').attr('src','images/introduce-48.jpg');
         $('#expensesImgTitle').attr('src','images/ex-title-48.jpg');
         $('#expensesImgTable').attr('src','images/table-48.png');
+        $('#tipImg').attr('src','images/tip_48.jpg');
     });
     $('[data-pack="18"]').on('click', function () {
         $('[data-pack]').removeClass('act');
@@ -99,5 +103,6 @@ $(document).ready(function(){
         $('#introduceImg').attr('src','images/introduce-18.jpg');
         $('#expensesImgTitle').attr('src','images/ex-title-18.jpg');
         $('#expensesImgTable').attr('src','images/table-18.png');
+        $('#tipImg').attr('src','images/tip_18.jpg');
     });
 });
